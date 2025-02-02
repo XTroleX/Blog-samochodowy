@@ -1,32 +1,11 @@
-/* .typewriter{
-    display: flex;
-    justify-content: center;
-}
-.typewriter p{
-    animation: typing 1s steps(60) forwards;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-inline: auto;
-    font-family: monospace;
-    font-size: 1.5rem;
-}
-@keyframes typing {
-from {
-    width: 0;
-}
-
-to {
-    width: 100%;
-}
-}  */
-  *{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
   .container{
     width: 100vw;
-    height: 100vh;
+    height: 234vh;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(36, 36, 36);
@@ -51,7 +30,39 @@ to {
     cursor: pointer;
     transition: 0.5s;
   }
-  article {
+
+.typewriter {
+    height: 400px;
+    width: 99vw;
+    display: flex;
+    background-image: url(img/photo\ car.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.typewriter p {
+    animation: typing 2.3s steps(36) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-inline: auto;
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-size: 38px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+article {
     width: 40vw;
     height: 230px;
     margin-left: auto;
