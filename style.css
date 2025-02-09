@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-
 }
 
 .container {
@@ -39,6 +38,7 @@ button {
   padding: 5px;
   background-color: rgb(46, 46, 46);
   color: white;
+  border-radius: 14px;
 }
 
 
@@ -76,28 +76,30 @@ button {
 
 article {
   width: 50vw;
-
-
   border-radius: 20px;
   background-color: rgb(19, 19, 19);
-
 }
-
+a:hover {
+  color: rgb(8, 237, 0);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.but{
+  width: 17%;
+  border:solid black 5px;
+}
 .articles {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-
   padding-top: 50px;
-
 }
 
 .text {
   display: flex;
   flex-direction: column;
-
   gap: 10px;
   padding: 20px;
 }
@@ -185,6 +187,12 @@ a {
 
 }
 
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 800px) {
 
   article {
@@ -199,9 +207,7 @@ a {
     font-size: 28px;
   }
 
-  .footer {
-    flex-direction: column;
-  }
+  
   
 
 }
