@@ -35,10 +35,18 @@ header h1 a:hover {
 }
 
 button {
-  padding: 5px;
-  background-color: rgb(46, 46, 46);
+  padding: 7px;
+  background-color: rgb(32, 32, 32);
   color: white;
+<<<<<<< HEAD
   border-radius: 14px;
+=======
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 2px 1px rgb(31, 31, 31);
+  cursor: pointer;
+>>>>>>> 5193892499369cfa9d01620c7c09395742bf63ed
 }
 
 
@@ -62,6 +70,7 @@ button {
   word-break: break-all;
   font-family: monospace;
   font-size: 38px;
+  color: rgb(255, 255, 255);
 }
 
 @keyframes typing {
@@ -166,6 +175,11 @@ a {
   text-decoration: none;
   color: rgb(222, 222, 222);
 }
+.footer a:hover {
+  color: rgb(179, 167, 167);
+  cursor: pointer;
+  transition: 0.5s;
+}
 
 @media (max-width: 1200px) {
 
@@ -185,6 +199,13 @@ a {
     font-size: 12px;
   }
 
+
+}
+
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 900px) {
@@ -207,7 +228,11 @@ a {
     font-size: 28px;
   }
 
+<<<<<<< HEAD
   
+=======
+ 
+>>>>>>> 5193892499369cfa9d01620c7c09395742bf63ed
   
 
 }
