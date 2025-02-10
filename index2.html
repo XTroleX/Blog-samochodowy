@@ -18,9 +18,9 @@
             </svg>
             <h1><a href="index.html">MOTORSBLOG</a></h1>
 
-            <button id="buton">
-                Zmień kolor
-            </button>
+            <div class="color">
+                <img src="img/sun.png" alt="" id="icon">
+            </div>
         </header>
         <div class="typewriter">
             <div>
@@ -109,6 +109,31 @@
             <br>
         </article>
     </div>
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("light-theme");
+            if (document.body.classList.contains("light-theme")) {
+                icon.src = "img/sun.png"
+
+            } else {
+                icon.src = "img/moon.png"
+            }
+        }
+        function Modes() {
+            var element = document.body;
+            element.classList.toggle("light-mode");
+        }
+
+        const zmienna1 = document.getElementById("container");
+        const zmienna2 = document.getElementById("loader");
+
+        window.addEventListener("load", () => {
+            zmienna1.style.display = "block";
+            zmienna2.style.display = "none";
+        })
+    </script>
 </body>
 
 </html>
